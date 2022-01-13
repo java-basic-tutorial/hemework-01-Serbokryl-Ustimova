@@ -35,11 +35,18 @@ public class Task02 {
         Scanner scanner = new Scanner(System.in);
         // TODO: Write your code here
         System.out.println("How many cups of coffee you will need:");//I chose number 25
-        String number = scanner.nextLine();
-        System.out.println("For " + number + " you will need:");
-        System.out.println("5000 ml of water\n" +
-                "1250 ml of milk\n" +
-                "375 g of coffee beans");
+        int number = scanner.nextInt();
+        System.out.println("For " + number + " cups of coffee you will need:");
+        int water = 200* number;
+        System.out.println( water + " ml of water");
+        int milk = 50*number;
+        System.out.println( milk + " ml of milk " );
+        int beans = 15*number;
+        System.out.println( beans + " g of coffee beans");
+
+
+
 
     }
+
 }
