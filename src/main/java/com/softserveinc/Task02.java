@@ -34,6 +34,16 @@ public class Task02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         // TODO: Write your code here
-
+        System.out.println("Write how many cups of coffee you will need:");
+        System.out.print(">>> ");
+        int number = scanner.nextInt();
+        System.out.println("For " + number + " cups of coffee you will need:");
+        int water = 200* number;
+        System.out.println( water + " ml of water");
+        int milk = 50*number;
+        System.out.println( milk + " ml of milk " );
+        int beans = 15*number;
+        System.out.println( beans + " g of coffee beans");
     }
+
 }
